@@ -1,0 +1,43 @@
+.row{
+    /* position: absolute; */
+    justify-content: space-around;
+    margin-left: 4px;
+    /* margin-top: 47%;
+   width: 103%;
+    */
+}
+.data{
+    color: rgb(255, 254, 252);
+    margin: 15px;
+}
+.data_paragraph{
+  color: rgb(255, 254, 252);
+  margin: 15px;
+}
+.card-hover {
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-hover:hover {
+    border-radius: 5px;
+    background: linear-gradient(135deg, #23bdb8, #43e794)
+  }
+
+  /* icon */
+  .icon{
+    text-align: center;
+    border: 2px solid;
+    border-radius: 90%;
+    color: white;
+    width: 70px;
+    padding-top: 20px;
+    height: 70px;
+    margin-left: 43%;
+    margin-top: 5px;
+  }
+
+  @media (max-width: 993px) {
+    .single-banner-boxes{
+        margin-bottom: 5%;
+    }
+  }

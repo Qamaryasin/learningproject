@@ -1,0 +1,114 @@
+.App {
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /* Arrange items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    justify-content: center;
+    /* Center items vertically */
+    text-align: center;
+    /* Center text */
+    height: 100vh;
+    /* Adjust height as needed */
+    margin-left: 5%;
+}
+
+.text-overlay h1,
+.text-overlay p,
+.text-overlay a {
+    margin: 10px 0;
+    /* Space out the items */
+    color: aliceblue;
+}
+
+.text-overlay h1 {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Poppins_6d1a03, __Poppins_Fallback_6d1a03';
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+/* Optional: Styling the button for better appearance */
+.text-overlay .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+/* image */
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FOR CARD  */
+.card-container {
+    position: absolute;
+    width: 100%;
+    margin-top: 47%;
+    padding: 20px;
+}
+/* .image-container {
+    position: relative;
+} */
+
+/* .responsive-image {
+    width: 100%;
+    height: auto; 
+} */
+
+@media screen and (max-width: 1240px) {
+    .responsive-image {
+        height: 1000px /* Adjust the height as needed */
+    }
+}
+@media screen and (max-width: 635px) {
+    .responsive-image {
+        height: 1400px /* Adjust the height as needed */
+    }
+}
+
+@media screen and (max-width: 860px) {
+  .card-container{
+    margin-top: 400px;
+  }
+}
+
+
+  /* .text-overlay h1 {
+    font-size: 2rem; 
+}
+
+.text-overlay p {
+    font-size: 1rem;
+} */
+
+@media screen and (max-width: 646px) {
+    .text-overlay h1 {
+        font-size: 1.5rem; /* Adjust the font size for smaller screens */
+    }
+
+    .text-overlay p {
+        font-size: 0.875rem; /* Adjust the font size for smaller screens */
+    }
+}  

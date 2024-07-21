@@ -1,0 +1,90 @@
+.main-team-div{
+    background-color:white;
+    border-radius: 10px;
+}
+
+
+.single-team{
+    text-align: center;
+    margin-top: 10%;
+}
+.team-image img{
+    border: 3px rgb(175, 244, 175) solid;
+    border-radius: 50%;
+}
+.team-info{
+    margin-top: 10%;
+    background: linear-gradient(135deg, #23bdb8, #43e794);
+    padding: 10px 15px;
+    border-radius: 75px;
+    margin: 25px 10px;
+    transition: .5s;
+    box-sizing: border-box;
+    margin-bottom: 10%;
+}
+h3,span{
+    color: white;
+}
+/* .ULlink{
+    display: flex;
+    list-style-type: none;
+}
+.ULlink li a{
+    padding: 5px;
+}
+ */
+
+.ULlink {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    flex-wrap: wrap; /* Allow wrapping */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .ULlink li {
+    margin: 10px; /* Space between icons */
+  }
+  
+  .ULlink a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c679e3;
+  }
+  
+  .ULlink svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  @media (max-width: 600px) {
+    .ULlink li {
+      margin: 5px; /* Adjust spacing for smaller screens */
+    }
+  }
+  
+  .ULlink a:hover {
+    transform: translateY(-5px);
+    color: #43e794;
+    transition: 0.3s;
+}
+
+
+.main-team-div:hover .team-image img {
+    border: 3px solid #026d1d; /* Dark border color */
+    transition: border 0.3s ease; /* Smooth transition */
+}
+
+.main-team-div:hover .team-content .team-info {
+    border-radius: 0%; /* Change border radius */
+    transition: border-radius 0.3s ease; /* Smooth transition */
+    /* background-color: rgb(206, 163, 24); */
+}
+
+@media (max-width: 7680px) {
+    .main-team-div{
+        margin-bottom: 5%;
+    }
+  }

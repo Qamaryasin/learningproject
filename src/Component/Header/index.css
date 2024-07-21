@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav_color{
+    background-color: aqua;
+    position: relative;
+ 
+    /* position: fixed; */
+    /* top: 0;
+    width: 100%; */
+    /* background-color: #333; */
+    /* color: white;
+    text-align: center;
+    padding: 1rem;
+    z-index: 1; */
+}
+.main-nav .nav-text{
+margin: 10px;
+font-size: 18px;
+color: white;
+}
+.main-nav .nav-text:hover{
+   /* border: 1px black solid;
+   border-radius: 10px; */
+   color: rgb(21, 176, 7);
+}
+.logo{
+    font-size: 50px;
+    margin-left: 20px;
+}
+.Toggle{
+  
+    background-color: aliceblue;
+}
+.support-btn {
+    width: 120px;
+    padding: 10px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    background: rgb(244, 95, 244);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.5s;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+            transition: transform 0.1s ease;
+}
+
+.support-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #e87892, #ff3613);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s;
+    border-radius: 5px;
+}
+
+.support-btn:hover::before {
+    opacity: 1;
+}
+.support-btn:hover {
+    transform: translateY(-3px); /* Move upward on hover */
+}
+
+/* main_banner */
+
+/* .text-overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center; 
+    text-align: center;     
+    height: 100vh;         
+    margin-left: 5%;
+} */
+
+/* .text-overlay h1, 
+.text-overlay p, 
+.text-overlay a {
+    margin: 10px 0; 
+    color: aliceblue;
+}
+.text-overlay h1{
+font-size: 50px;
+font-weight: 700;
+font-family: 'Poppins_6d1a03, __Poppins_Fallback_6d1a03';
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+.text-overlay .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}  */

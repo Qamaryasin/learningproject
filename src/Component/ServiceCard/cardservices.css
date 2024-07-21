@@ -1,0 +1,105 @@
+.single-services-box-item{
+    background-color: rgb(255, 255, 255);
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    padding: 90px 35px 70px;
+    
+}
+/* .icon{
+   
+    flex-direction: row;
+} */
+.icon {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically if needed */
+  }
+  
+  .first-p{
+    background-color: #80c54d;
+  
+   padding: 25px;
+   border-radius: 5px;
+}
+.second-p{
+    background-color: #4267d1;
+  
+   padding: 25px;
+   border-radius: 5px;
+}  .third-p{
+    background-color: #ca8220;
+  
+   padding: 25px;
+   border-radius: 5px;
+}  .four-p{
+    background-color: #b92fb1;
+  
+   padding: 25px;
+   border-radius: 5px;
+}  .five-p{
+    background-color: #de6742;
+  
+   padding: 25px;
+   border-radius: 5px;
+}  .six-p{
+    background-color: #59eed0;
+  
+   padding: 25px;
+   border-radius: 5px;
+}
+.main-head{
+    margin-top: 15%;
+    text-transform: uppercase;
+  
+}
+.main-head a{
+  color: black;
+  text-decoration: none;
+}
+
+.single-services-box-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  /* Learn more */
+  .learn-more-btn {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+    color: #86d84c;
+}
+
+.learn-more-btn svg {
+    transition: transform 0.2s ease;
+}
+.learn-more-btn a:hover{
+    color: black;
+}
+
+.learn-more-btn span {
+    display: inline-block;
+    margin-left: 8px;
+    transition: transform 0.1s ease;
+}
+
+.learn-more-btn:hover svg {
+    transform: translateX(110px);
+}
+
+.learn-more-btn:hover span {
+    transform: translateX(5px);
+}
+
+.single-services-box-item p{
+    color: #6084a4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+}

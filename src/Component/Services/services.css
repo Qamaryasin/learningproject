@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    text-align: center;
+    padding: 0 20px;
+    position: relative; /* Ensure relative positioning for absolute children */
+    margin-bottom: 5%;
+}
+
+.whatwedo{
+    /* font-size: 2em; */
+    margin: 10px 0;
+    position: relative; /* Ensure relative positioning for absolute children */
+    text-decoration: underline; /* Add underline */
+    transition: color 0.3s, text-decoration-color 0.3s; /* Transition effect */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 10%;
+}
+
+.whatwedo:hover {
+    color: #ff6600; /* Change color on hover */
+    text-decoration-color: #ff6600; /* Change underline color on hover */
+}
+.whatwedo:hover::after {
+    height: 8px; /* Increase underline height on hover */
+    background-color: #ff6600; /* Change underline color on hover */
+}
+.pol {
+    font-size: 1.0em;
+    max-width: 600px;
+    margin: 10px 0;
+    color: black;
+    position: relative; /* Ensure relative positioning for absolute children */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.dot {
+    position: absolute;
+    top: 74%; /* Adjust as needed */
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff6600; /* Color of the dot */
+    animation: moveRight 9s linear infinite; /* Animation properties */
+}
+
+@keyframes moveRight {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%; /* Move the dot to the right edge */
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    .pol {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+    }
+    
+    .pol {
+        font-size: 0.8em;
+    }
+}
+
+/* main-div */
+.main-div{
+    background-color: #eef6fd;
+}
